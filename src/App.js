@@ -22,80 +22,104 @@ const App = () => {
         onPress: () => {alert('dadasdas')}
     },
     {
-        value: 'C',
+        value: '%',
         backgroundColor: '#475C6B',
         color: 'white',
         onPress: () => {alert('dadasdas')}
     },
     {
-        value: 'C',
+        value: '÷',
         backgroundColor: '#475C6B',
         color: 'white',
         onPress: () => {alert('dadasdas')}
     },
     {
-        value: 'C',
+        value: '7',
+        backgroundColor: '#EFE2D0',
+        color: 'black',
+        onPress: () => {alert('dadasdas')}
+    },
+    {
+        value: '8',
+        backgroundColor: '#EFE2D0',
+        color: 'black',
+        onPress: () => {alert('dadasdas')}
+    },
+    {
+        value: '9',
+        backgroundColor: '#EFE2D0',
+        color: 'black',
+        onPress: () => {alert('dadasdas')}
+    },
+    {
+        value: 'x',
         backgroundColor: '#475C6B',
         color: 'white',
         onPress: () => {alert('dadasdas')}
     },
     {
-        value: 'C',
+        value: '4',
+        backgroundColor: '#EFE2D0',
+        color: 'black',
+        onPress: () => {alert('dadasdas')}
+    },
+    {
+        value: '5',
+        backgroundColor: '#EFE2D0',
+        color: 'black',
+        onPress: () => {alert('dadasdas')}
+    },
+    {
+        value: '6',
+        backgroundColor: '#EFE2D0',
+        color: 'black',
+        onPress: () => {alert('dadasdas')}
+    },
+    {
+        value: '-',
         backgroundColor: '#475C6B',
         color: 'white',
         onPress: () => {alert('dadasdas')}
     },
     {
-        value: 'C',
-        backgroundColor: '#475C6B',
-        color: 'white',
+        value: '1',
+        backgroundColor: '#EFE2D0',
+        color: 'black',
         onPress: () => {alert('dadasdas')}
     },
     {
-        value: 'C',
-        backgroundColor: '#475C6B',
-        color: 'white',
+        value: '2',
+        backgroundColor: '#EFE2D0',
+        color: 'black',
         onPress: () => {alert('dadasdas')}
     },
     {
-        value: 'C',
-        backgroundColor: '#475C6B',
-        color: 'white',
+        value: '3',
+        backgroundColor: '#EFE2D0',
+        color: 'black',
         onPress: () => {alert('dadasdas')}
     },
     {
-        value: 'C',
-        backgroundColor: '#475C6B',
-        color: 'white',
-        onPress: () => {alert('dadasdas')}
-    },
-    {
-        value: 'C',
-        backgroundColor: '#475C6B',
-        color: 'white',
-        onPress: () => {alert('dadasdas')}
-    },
-    {
-        value: 'C',
+        value: '+',
         backgroundColor: '#475C6B',
         color: 'white',
         onPress: () => {alert('dadasdas')}
     },
     {
         value: '0',
-        backgroundColor: '#475C6B',
-        color: 'white',
+        backgroundColor: '#EFE2D0',
+        color: 'black',
         onPress: () => {alert('dadasdas')}
     },
     {
-        value: 'C',
-        backgroundColor: '#475C6B',
-        color: 'white',
+        value: '.',
+        backgroundColor: '#EFE2D0',
+        color: 'black',
         onPress: () => {alert('dadasdas')}
     },
     {
-        value: 'C',
-        backgroundColor: '#475C6B',
+        value: '=',
+        backgroundColor: '#EF7B5A',
         color: 'white',
         onPress: () => {alert('dadasdas')}
     },
@@ -104,7 +128,7 @@ const App = () => {
   return (
     <SafeAreaView style={styles.container}>
         <View style={styles.displayContainer}>
-          <Text>1234</Text>
+          <Text style={styles.displayText}>1234</Text>
         </View>
         <View style={styles.buttonContainer}>
           {
@@ -123,6 +147,10 @@ const styles = StyleSheet.create({
     alignItems: 'flex-end',
     justifyContent: 'flex-end',
     flex: 1,
+    marginRight: 16,
+    marginLeft: 16,
+    borderBottomWidth: 3,
+    borderBottomColor: '#EDEDED'
   },
   buttonContainer: {
     flexDirection: 'row',
@@ -130,6 +158,11 @@ const styles = StyleSheet.create({
     justifyContent: 'space-evenly',
     margin: 13.5,
   },
+  displayText: {
+    fontSize:56,
+    color: 'black',
+    fontStyle: 'italic'
+  }
 });
 
 export default App;
